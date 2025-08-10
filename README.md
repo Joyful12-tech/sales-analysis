@@ -10,10 +10,10 @@
 - [Result](#result)
 - [Recommendations](#recommendations)
 
-
+---
 ### Project Overview 
-This project focuses on analyzing and visualizing restaurant sales data to uncover trends, measure performance, and provide actionable business insights.
-
+This project focuses on analyzing and visualizing restaurant sales data to uncover trends, measure performance, and provide actionable business insights
+---
 ###  Data Source
 The dataset used for this project contains restaurant sales transaction records, including:
 
@@ -24,12 +24,12 @@ The dataset used for this project contains restaurant sales transaction records,
 - Customer information (Customer ID)
 
 The data was provided as a CSV file and served as the basis for cleaning, transformation, and visualization.
-
+----
 ### Tools 
 - MySQL – For data cleaning, transformation, and exploratory analysis.
 
 - Tableau – For creating interactive dashboards and visualizations.
-
+---
 ### Data Cleaning Process
 The raw dataset underwent several cleaning and preparation steps to ensure accuracy and consistency:
 1. Data Import & Inspection
@@ -38,13 +38,12 @@ The raw dataset underwent several cleaning and preparation steps to ensure accur
 4. Duplicate Removal
 5. Standardization
 6. Calculated Fields Creation
-
+---
 ### Exploratory Data Analysis
 - Which category of products contributes the most to total sales?
 - What is the monthly trend of total sales and total orders?
 - Who are the top 10 customers by total purchase amount?
-
-
+---
 ###  Data Analysis
 Code worked with 
 ```
@@ -54,7 +53,7 @@ SELECT
     SUM(Price) / COUNT(DISTINCT ID) AS avg_order_value
 FROM restaurant_sales_data2;
 ```
-
+---
 ### Result 
 This query calculates three key metrics from the restaurant_sales_data2 table:
 
@@ -65,7 +64,7 @@ This query calculates three key metrics from the restaurant_sales_data2 table:
 - Average Order Value (AOV) – The total sales divided by the number of unique orders (SUM(Price) / COUNT(DISTINCT ID)), showing the average revenue per order.
 
 It’s basically giving you an overall revenue snapshot with both pricing and order value insights.
-
+---
 
 ### Recommendations
 Based on the analysis of the sales dataset, the following strategies are recommended to
