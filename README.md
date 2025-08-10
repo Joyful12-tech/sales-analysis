@@ -2,7 +2,13 @@
 
 ## Table of contents
 - [Project Overview](#project-overview)
-- [Data Source](data-source)
+- [Data Source](#data-source)
+- [Tools](#tools)
+- [Data Cleaning Process](#data-cleaning-process)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [Result](#result)
+- [Recommendations](#recommendations)
 
 
 ### Project Overview 
@@ -33,7 +39,7 @@ The raw dataset underwent several cleaning and preparation steps to ensure accur
 5. Standardization
 6. Calculated Fields Creation
 
-### Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis
 - Which category of products contributes the most to total sales?
 - What is the monthly trend of total sales and total orders?
 - Who are the top 10 customers by total purchase amount?
@@ -49,7 +55,7 @@ SELECT
 FROM restaurant_sales_data2;
 ```
 
-### Result/Findings 
+### Result 
 This query calculates three key metrics from the restaurant_sales_data2 table:
 
 - Total Sales – The sum of all item prices (SUM(Price)), representing total revenue.
